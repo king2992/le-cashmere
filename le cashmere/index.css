@@ -4,20 +4,35 @@
     padding: 0 auto;
 }
 
+body{
+    font-family: Arial, 'Noto Sans KR', sans-serif;
+}
+
 header{
+
+}
+
+.header-wrap{
     display: flex;
     justify-content: left;
     align-items: center;
 }
-
-
 
 .nav-wrap{
     width: 600px;
     height: 80px;
     display: flex;
     align-items: center;
-    
+    margin: 0;
+}
+
+.nav-wrap nav a{
+    color: #373735;
+    font-size: 12px;
+    line-height: 80px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
 
 .logo{
@@ -25,7 +40,13 @@ header{
 }
 
 .logo img{
-    width: 140px;
+    width: 150px;
+}
+
+.logo-wrap{
+    width: 14%;
+    margin: 0;
+    margin-left: 5%;
 }
 
 .main-image{
@@ -70,6 +91,7 @@ header{
 
 .main-item {
     width: 80%;
+    margin-bottom: 50px;
 }
 
 .first-row{
@@ -88,6 +110,11 @@ header{
     letter-spacing: 1px;
 }
 
+.first-row .item .desc{
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+
 .second-row{
     display: flex;
 }
@@ -104,11 +131,16 @@ header{
     letter-spacing: 1px;
 }
 
+.second-row .item .desc{
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+
 .shop-img-box{
     width: 70%;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
+    height: 1150px;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .is-full.first{
@@ -116,6 +148,12 @@ header{
     background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2022/10/LC_자사몰-배너_하단_WOMEN_221017_pc.jpg');
     background-size: cover;
     width: 100%;
+    margin-bottom: 20px;
+}
+
+.is-full.firs:hover{
+    transform: scale(1.1);
+    transition: .2s all linear;
 }
 
 .is-full.second{
@@ -127,10 +165,34 @@ header{
 
 .grid{
     height: 33.33%;
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: row; */
+    margin-bottom: 20px;
 }
 
+.box.left{
+    display: inline-block;
+    width: 37%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.box.right{
+    display: inline-block;
+    width: 61%;
+    height: 100%;
+}
+.grid .box .left-box{
+    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2020/06/MEN.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+.grid .box .right-box{
+    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2020/06/KIDS2.jpg');
+    background-size: cover;
+    height: 100%;
+}
 .site-footer {
     margin-top: 100px;
 }
