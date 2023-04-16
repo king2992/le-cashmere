@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-wrap{
+    width: 600px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo{
+    width: 400px;
+}
+
+.logo img{
+    width: 140px;
+}
+
+.main-image{
+    height: 800px;
+    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2022/10/%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88_4000px.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px
+}
+
+.main-grid{
+    margin-bottom:80px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.main-grid .row{
+    display: flex;
+    width: 70%;
+}
+
+.main-grid .col{
+    width: 33.33%;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.main-grid .title{
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-grid .desc{
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}
+
+.main-item {
+    width: 80%;
+}
+
+.first-row{
+    display: flex;
+}
+
+.first-row .item{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.first-row .item .title{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.second-row{
+    display: flex;
+}
+
+.second-row .item{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.second-row .item .title{
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.shop-img-box{
+    width: 70%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.is-full.first{
+    height: 33.33%;
+    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2022/10/LC_자사몰-배너_하단_WOMEN_221017_pc.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.is-full.second{
+    height: 33.33%;
+    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2021/09/LCMainLeseries1_PC.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.grid{
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.box.left-box{
+    width: 30%;
+    height: 100%;
+    background-image: url(http://lecashmere.co.kr/wp/wp-content/uploads/2020/06/MEN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box.right-box{
+    background-image: url(http://lecashmere.co.kr/wp/wp-content/uploads/2020/06/KIDS2.jpg);
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: .2s all linear;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    transition: .2s all linear;
+}
+
+.site-footer {
+    margin-top: 100px;
+}
+
+.site-footer .bar {
+    background-color: #eee9de;
+}
+
+.site-footer .content {
+    background-color: #D9D9D9;
+}
+
+.site-footer .bar .row {
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.site-footer .bar .row .col {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.site-footer .bar .row .col.center {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.site-footer .bar .row .col.find-store img {
+    width: 25px;
+    vertical-align: sub;
+    margin-right: 15px;
+}
+
+.site-footer .bar .row .col a {
+    color: #6a1e17;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Libre Caslon Text', serif;
+    letter-spacing: 1px;
+}
+
+.site-footer .content .runtime {
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.site-footer .content .row .col.wholesale .col-title a {
+    color: #6a1e17;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.site-footer .content .row {
+    max-width: 1320px;
+    margin: 0 auto;
+    overflow: hidden;	
+    padding: 0 20px;
+}
+
+.site-footer .content .row .col {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.site-footer .content .row .col li {
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.site-footer .content .row .col a {
+    color: #373735;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.site-footer .content .row .col .sns {
+    margin-top: 30px;
+}
+
+.site-footer .content .row .col ul {
+    list-style: none;
+}
+
+.site-footer .content .row .col .sns li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.site-footer .content .row .col .sns li img {
+    width: 25px;
+}
+
+.site-footer .content .row .col .sns li.youtube img {
+    width: 30px;
+}
+
+.site-footer .content .row .col .sns li.fb img {
+    width: 13px;
+}
+
+.site-footer .content .row .col.wholesale img {
+    width: 80px;
+}
+
+.site-footer .content .row .col.wholesale .logo {
+    margin-top: 30px;
+}
+
+.site-footer .content .row .col.wholesale .logo .txt {
+    font-size: 10px;
+}
+
