@@ -27,8 +27,8 @@ header{
 }
 
 .main-image{
-    height: 800px;
-    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2022/10/%EB%A9%94%EC%9D%B8%EB%B0%B0%EB%84%88_4000px.jpg');
+    height: calc(100vh - 80px);
+    background-image: url('image/메인배너_4000px.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 50px
@@ -60,7 +60,7 @@ header{
 
 .main-grid .desc{
     font-size: 14px;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.7px; /* 자간 */
 }
 
 .main-item {
@@ -69,11 +69,13 @@ header{
 
 .first-row{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .first-row .item{
     text-align: center;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .first-row .item .title{
@@ -90,6 +92,7 @@ header{
 .second-row .item{
     text-align: center;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .second-row .item .title{
@@ -99,57 +102,121 @@ header{
     letter-spacing: 1px;
 }
 
-.shop-img-box{
-    width: 70%;
-    height: 1000px;
+.read-more-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    background-color: #353532;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    opacity: 0;
+    transition: .2s opacity linear;
+    cursor: pointer;
+}
+
+.categories {
     display: flex;
-    flex-direction: column;
+    width: 80%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 4rem;
+  }
+  
+.category {
+    background: #000;
+    height: 30vw;
+    overflow: hidden;
+    position: relative;
 }
 
-.is-full.first{
-    height: 33.33%;
-    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2022/10/LC_자사몰-배너_하단_WOMEN_221017_pc.jpg');
-    background-size: cover;
+.category:nth-child(1) {
+    flex-basis: 80%;
+    flex-grow: 1;
+}
+
+.category:nth-child(1) .img {
     width: 100%;
-}
-
-.is-full.second{
-    height: 33.33%;
-    background-image: url('http://lecashmere.co.kr/wp/wp-content/uploads/2021/09/LCMainLeseries1_PC.jpg');
-    background-size: cover;
-    width: 100%;
-}
-
-.grid{
-    height: 33.33%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.box.left-box{
-    width: 30%;
     height: 100%;
-    background-image: url(http://lecashmere.co.kr/wp/wp-content/uploads/2020/06/MEN.jpg);
-    background-repeat: no-repeat;
+    background: url('image/LC_자사몰-배너_하단_WOMEN_221017_pc.jpeg');
     background-size: cover;
+    background-position: center;
 }
 
-.box.right-box{
-    background-image: url(http://lecashmere.co.kr/wp/wp-content/uploads/2020/06/KIDS2.jpg);
-    width: 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.category:nth-child(2) {
+    flex-basis: 30%;
 }
 
+.category:nth-child(2) .img {
+    width: 100%;
+    height: 100%;
+    background: url('image/MEN.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.category:nth-child(3) {
+    flex-grow: 1;
+}
+
+.category:nth-child(3) .img {
+    width: 100%;
+    height: 100%;
+    background: url('image/KIDS2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.category:nth-child(4) {
+    flex-basis: 80%;
+    flex-grow: 1;
+}
+
+.category:nth-child(4) .img {
+    width: 100%;
+    height: 100%;
+    background: url('image/LCMainLeseries1_PC.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.category .img {
+    transition: transform 0.3s ease;
+}
+
+.category:hover .img {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.category .button {
+    color: white;
+    background: hsl(0, 0%, 20%);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem;
+}
+
+.category .button:hover {
+    background: hsla(0, 0%, 100%, 0.5);
+    color: #373737;
+    border: 1px solid #373737;
+}
 .item:hover{
-    transform: scale(1.1);
-    transition: .2s all linear;
+    opacity: 0.5;
+    transition: .2s opacity linear;
 }
 
-.box:hover{
-    transform: scale(1.1);
-    transition: .2s all linear;
+.item:hover > .read-more-btn{
+    opacity: 2;
+    transition: .2s opacity linear;
 }
 
 .site-footer {
